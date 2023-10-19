@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Definindo cores por variável */
+:root {
+  --azul-claro: #97d2fb; 
+  --cinza: #e1eff6; 
+  --verde: #80ffe8; 
+  --rosa: #eccbd9; 
+}
+
+
+/* Arrumando as caixas para melhor interface */
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+
+/* Definindo o estilo do corpo da página */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: var(--azul-claro);
+}
+
+
+/* Definindo estilo do container principal */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: var(--cinza); /* Cinza claro */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilizando os campos de entrada */
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  display: block; /* Exibe os campos em linhas diferentes */
+}
+
+
+/* Colocando borda nos campos de entrada */
+form input:focus {
+  outline: 1px solid var(--azul-claro);
+}
+
+
+/* Estilizando o botão do login */
+.botao-de-login {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  background: var(--azul-claro);
+  cursor: pointer;  /* Muda o cursor quando ele passa pelo botão */
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+
+/* Muda cor do botão quando o mouse está sobre ele */
+.botao-de-login:hover {
+  background: var(--verde);
+}
+
+
+/* Muda cor do botão quando ele é clicado */
+.botao-de-login:active {
+  background: var(--rosa);
+}
+
+
+/* Estiliza os blocos de botões do login */
+.campo-das-acoes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+
+/* Mesmas estilizações para outro botão */
+.botao-de-acao {
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background: var(--azul-claro);
+  border-radius: 15px;
+}
+
+.botao-de-acao:hover {
+  background: var(--verde);
+}
+
+.botao-de-acao:active {
+  background: var(--rosa);
+}
+
+/* Estilização do elemento de permissão */
+.permission {
+  font-size: 18px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+
+/* Estilizando uma modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+/* Estilizando o conteúdo da modal */
+.modal-content {
+  background: var(--cinza);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilizando o botão para fechar a modal */
+.close:hover {
+  color: red;
+}
+
+.close {
+  position: absolute;
+  top: -15px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  background: var(--cinza);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}

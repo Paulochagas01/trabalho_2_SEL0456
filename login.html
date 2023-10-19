@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEL0456</title>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <!-- MODAL PARA CRIAR CONTA -->
+  <div id="criarUsuarioModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Criar Conta</h2>
+      <form id="accountForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" required>
+
+        <label for="senha">Senha</label>
+	<input type="password" id="senha" name="senha" required>
+
+	<label for="confirmar-senha">Confirmar Senha</label>
+	<input type="password" id="confirmar-senha" name="confirmar-senha" required>
+	
+
+        <label for="permissao">Permissão:</label>
+        <select id="permissao" class="permission" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        <div class="campo-das-acoes">
+          <button class="botao-de-acao" type="submit" id="submitAccount">Criar</button>
+        </div>
+        <div class="createAccountResult" id="createAccountResult"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TELA INICIAL -->
+  <section class="container">
+    <h1>Login</h1>
+    <p>
+      Trabalho 2 - Técnicas em Desenvolvimento de Software Livre
+
+    </p>
+    <form action="" method="get" id="loginForm">
+      <!--<label for="input-teste-1">Usuário</label>
+      <input type="text" id="inputUser">
+
+      <label for="input-teste-2">Senha</label>
+      <input type="password" id="inputPassword" required>
+
+      <button class="botao-de-login" id="botao-de-login" type="submit">Entrar</button> -->
+      
+        <div class = "form-inputs">
+        <label for="input-teste-1">Usuário</label>
+        <input type="text" id="inputUser">
+
+        <label for="input-teste-2">Senha</label>
+        <input type="password" id="inputPassword" required>
+      </div>
+      <button class="botao-de-login" id="botao-de-login" type="submit">Entrar</button> 
+    </form>
+    <div id="loginResult"></div>
+    <div class="campo-das-acoes">
+      <button class="botao-de-acao" id="criar-conta">Criar conta</button>
+    </div>
+  </section>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
